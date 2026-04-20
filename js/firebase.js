@@ -1,23 +1,21 @@
-// =============================================
-// firebase.js — Firebase v9 Modular SDK Config
-// Replace the firebaseConfig below with your
-// actual Firebase project credentials from:
-// https://console.firebase.google.com/
-// =============================================
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-
-// 🔥 REPLACE THIS with your Firebase project config
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAyGilLtIDX9bIs8GppsVTEZo6xxqpwj4U",
+  authDomain: "temple-5b810.firebaseapp.com",
+  projectId: "temple-5b810",
+  storageBucket: "temple-5b810.firebasestorage.app",
+  messagingSenderId: "37611694179",
+  appId: "1:37611694179:web:0fa7435593b200eac47056",
+  measurementId: "G-9ZKEN1DCEF"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+const analytics = getAnalytics(app);
